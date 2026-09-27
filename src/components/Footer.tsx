@@ -13,7 +13,7 @@ const serviceLinks = [
   { label: "Electrical", href: "/electrical-repair/" },
   { label: "Waterproofing", href: "/waterproofing/" },
   { label: "Painting", href: "/painting-wall-repair/" },
-  { label: "General Repairs", href: "/property-maintenance/" },
+  { label: "Carpentry & Doors", href: "/carpentry-doors-locks/" },
 ];
 
 export default function Footer() {

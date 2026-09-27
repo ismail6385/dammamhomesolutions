@@ -102,7 +102,7 @@ export const issueCategories: IssueCategory[] = [
     ],
     whatsappMessage:
       "Hello Dammam Home Solutions, I have a door / carpentry issue. Here's what's happening: ",
-    href: "/carpentry-repair/",
+    href: "/carpentry-doors-locks/",
   },
   {
     id: "other",
