@@ -9,8 +9,8 @@ const insideHome: ScopeItem[] = [
   { label: "AC & HVAC", href: "/ac-repair/" },
   { label: "Painting", href: "/painting-wall-repair/" },
   { label: "Carpentry", href: "/carpentry-doors-locks/" },
-  { label: "Bathroom repairs" },
-  { label: "Kitchen repairs" },
+  { label: "Bathroom repairs", href: "/bathroom-kitchen-repair/" },
+  { label: "Kitchen repairs", href: "/bathroom-kitchen-repair/" },
 ];
 
 const protectingProperty: ScopeItem[] = [
