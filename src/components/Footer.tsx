@@ -15,6 +15,7 @@ const serviceLinks = [
   { label: "Painting", href: "/painting-wall-repair/" },
   { label: "Carpentry & Doors", href: "/carpentry-doors-locks/" },
   { label: "Bathroom & Kitchen", href: "/bathroom-kitchen-repair/" },
+  { label: "General Home Repairs", href: "/general-home-repairs/" },
 ];
 
 export default function Footer() {
