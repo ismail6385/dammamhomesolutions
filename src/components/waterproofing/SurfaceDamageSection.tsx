@@ -27,7 +27,7 @@ export default function SurfaceDamageSection() {
           <p className="mt-5 text-sm text-ink-600">
             Once the source is addressed, affected surfaces may need
             separate restoration — see our{" "}
-            <a href="/painting-repair/" className="focus-ring rounded-sm underline decoration-ink-900/20 underline-offset-4 hover:decoration-cyan-700">
+            <a href="/painting-wall-repair/" className="focus-ring rounded-sm underline decoration-ink-900/20 underline-offset-4 hover:decoration-cyan-700">
               painting &amp; wall repair
             </a>{" "}
             service.

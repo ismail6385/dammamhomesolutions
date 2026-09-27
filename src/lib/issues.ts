@@ -74,7 +74,7 @@ export const issueCategories: IssueCategory[] = [
     ],
     whatsappMessage:
       "Hello Dammam Home Solutions, I have a wall / paint issue. Here's what's happening: ",
-    href: "/painting-repair/",
+    href: "/painting-wall-repair/",
   },
   {
     id: "bathrooms",

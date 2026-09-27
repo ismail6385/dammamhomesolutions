@@ -12,7 +12,7 @@ const serviceLinks = [
   { label: "Plumbing", href: "/plumbing-repair/" },
   { label: "Electrical", href: "/electrical-repair/" },
   { label: "Waterproofing", href: "/waterproofing/" },
-  { label: "Painting", href: "/painting-repair/" },
+  { label: "Painting", href: "/painting-wall-repair/" },
   { label: "General Repairs", href: "/property-maintenance/" },
 ];
 
