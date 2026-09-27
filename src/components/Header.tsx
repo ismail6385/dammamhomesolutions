@@ -1,20 +1,26 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { buildWhatsAppLink, siteConfig } from "@/lib/site-config";
+import Link from "next/link";
+import { buildWhatsAppLink } from "@/lib/site-config";
 
 const navLinks = [
-  { label: "Services", href: "#services" },
-  { label: "Home Repairs", href: "#home-repairs" },
-  { label: "Property Maintenance", href: "#property-maintenance" },
-  { label: "About", href: "#why-different" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Home Repairs", href: "/#home-repairs" },
+  { label: "Property Maintenance", href: "/#property-maintenance" },
+  { label: "About", href: "/#why-different" },
+  { label: "Contact", href: "/#contact" },
 ];
 
-const headerWhatsAppMessage =
-  "Hello Dammam Home Solutions, I'd like to ask about a repair or maintenance job.";
+interface HeaderProps {
+  ctaLabel?: string;
+  whatsappMessage?: string;
+}
 
-export default function Header() {
+export default function Header({
+  ctaLabel = "WhatsApp Us",
+  whatsappMessage = "Hello Dammam Home Solutions, I'd like to ask about a repair or maintenance job.",
+}: HeaderProps) {
   const [compact, setCompact] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -41,12 +47,12 @@ export default function Header() {
       }`}
     >
       <div className="container-edge flex items-center justify-between gap-4">
-        <a
-          href="#hero"
+        <Link
+          href="/"
           className="focus-ring rounded-sm font-serif text-lg font-semibold tracking-tight text-ink-950 sm:text-xl"
         >
           Dammam <span className="text-rust-700">Home Solutions</span>
-        </a>
+        </Link>
 
         <nav
           aria-label="Primary"
@@ -65,12 +71,12 @@ export default function Header() {
 
         <div className="flex items-center gap-3">
           <a
-            href={buildWhatsAppLink(headerWhatsAppMessage)}
+            href={buildWhatsAppLink(whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
             className="focus-ring hidden items-center gap-2 rounded-full bg-ink-950 px-5 py-2.5 text-sm font-semibold text-sand-50 transition-transform hover:scale-[1.03] sm:inline-flex"
           >
-            WhatsApp Us
+            {ctaLabel}
           </a>
 
           <button
@@ -110,12 +116,12 @@ export default function Header() {
             </a>
           ))}
           <a
-            href={buildWhatsAppLink(headerWhatsAppMessage)}
+            href={buildWhatsAppLink(whatsappMessage)}
             target="_blank"
             rel="noopener noreferrer"
             className="focus-ring mt-2 inline-flex items-center justify-center rounded-full bg-ink-950 px-5 py-3 text-sm font-semibold text-sand-50"
           >
-            WhatsApp Us
+            {ctaLabel}
           </a>
         </nav>
       </div>
